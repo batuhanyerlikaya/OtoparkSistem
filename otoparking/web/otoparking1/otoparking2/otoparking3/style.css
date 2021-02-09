@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Bebas Neue', cursive;
+}
+.header{
+    background-image:
+    linear-gradient(to left bottom, rgba(191, 191, 191, 0.7),rgba(64, 64, 64, 0.9)),
+    url(img/otopark5.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    /*clip-path: polygon(0 0, 100% 0, 100% 90%, 27% 100%, 0 100%);*/
+}
+/*------------------------NAV----------her sayfanın nav-bar kısmını oluşturan cssler-------------------------------*/
+.nav{
+    position: absolute;
+    background-color: gray;
+    display: inline-block;
+    height: 12rem;
+    width: 100%;
+    opacity: 0.7;
+}        
+.nav-logo{
+    display: inline-block;
+    height: 11rem;
+    padding-left: 2%;
+}
+
+@media screen and (max-width: 1360px){
+    .nav{
+        height: 10rem;
+    }
+    .nav-logo{
+        height: 10rem;
+    }
+    .ustbar-icon{
+        font-size: 3rem;
+    }
+    .ustbar{
+        height: 7.5rem;
+    }
+    .yanmenu{
+        width: 30.4rem;
+    }
+    .yanbar-a{
+        width: 30.4rem;
+    } 
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+.container{
+    width: 100%;
+    height: 100%;
+}
+.ustbar{
+    position: absolute;
+    background-color: gray;
+    width: 100%;
+    height: 9.5rem;
+}
+.ustbar-icon{
+    list-style: none;
+    position: relative;
+    float: right;
+    color: black;
+    margin-top: 0.5rem;
+    margin-right: 5rem;
+    padding:1.3rem 3rem ;
+    font-size: 6.5rem;
+    
+}
+.cıkısyap-alt-li{
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+.a-cıkısyap{
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+    color: black;
+    padding: 5px 10px;
+    background-color: rgb(153, 149, 149);
+    border-radius: 5px;
+}
+.a-cıkısyap:hover{
+    background-color: rgb(190, 0, 0);
+}
+.cıkısyap-ul{
+    display: none;
+}
+.ustbar-icon:hover .cıkısyap-ul {
+    display: block;
+}
+
+/****************************************************************/
+.yanmenu{
+    position: absolute;
+    background-color: gray;
+    height: 100%;
+    width: 42.4rem;
+}
+.yanmenu-logo{
+    position: absolute;
+    padding-left: 24%;
+    padding-top: 10%;
+    width: 50%;
+}
+.yanbar-ul{
+    list-style: none;
+    position: absolute;
+    margin-top: 70%;
+    
+}
+.yanbar-li{
+    margin-bottom: 1rem;
+}
+.yanbar-a{
+    display: block;
+    background: lightgrey;
+    width: 42.4rem;
+    color: black;
+    text-decoration: none;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    font-size: 2rem;
+    border: 0.1px solid lightgrey;
+    border-radius: 7px;
+
+}
+.yanbar-a:hover{
+    background-color: rgb(71, 71, 71);
+}
+.unactive{
+    background-color: gray;
+    border: grey;
+}
+

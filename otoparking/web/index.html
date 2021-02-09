@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otopark Otomasyon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="otoparking1/otoparking2/otoparking3/style.css">
+    <style>
+        /*rgb(44, 47, 51); navbar zemin rengi */
+        .heading{
+            text-transform: uppercase;
+            position: absolute;
+            top: 30%;
+            left: 47%;
+            text-align: center;
+        }
+        .heading-main{
+            font-size: 5rem;
+            display: block;
+            letter-spacing: 0.8rem;
+        }
+        .heading-sub{
+            display: block;
+            font-size: 7rem;
+            letter-spacing: 0.5rem;
+        }
+
+        .logo-box{
+            position: absolute;
+            bottom: 0rem;
+            left: 2rem;
+        }
+        .logo{
+            height: 30rem;
+        }
+
+        /**********************************************/
+        .menu-list{
+            position: absolute;
+            list-style: none;
+        }
+        .menu-list li{
+            display: inline-block;
+            margin-top: 0.2rem;
+            margin-right: 0.1rem;
+        }
+        a{
+            border-radius: 5%;
+        }
+        .menu-list li .a1{
+            display: inline-block;
+            width: 33rem;
+            background: rgb(44, 47, 51);
+            color: white;
+            text-decoration: none;
+            height: 10rem;
+            line-height: 10rem; 
+            text-align: center;
+            font-size: 5rem;
+        }
+        .menu-list li a:hover{
+            background-color: rgba(196, 199, 3, 0.856);
+        }
+        .girisyap ul li{
+            display: block;
+            float: none;
+
+        }
+        .kayitol ul li{
+            display: block;
+            float: none;
+            
+        }
+        .girisyap li a{
+            background-color:  rgb(78, 78, 78);
+            display: block;
+            width: 20rem;
+            color: white;
+            text-decoration: none;
+            height: 10rem;
+            line-height: 10rem; 
+            text-align: center;
+            font-size: 4rem;
+            
+        }
+        .kayitol li a{
+            background-color:  rgb(78, 78, 78);
+            display: block;
+            width: 20rem;
+            color: white;
+            text-decoration: none;
+            height: 10rem;
+            line-height: 10rem; 
+            text-align: center;
+            font-size: 4rem;
+        }
+        .girisyap:hover ul a{
+            background-color: rgb(133, 133, 133);
+        }
+        .kayitol:hover ul a{
+            background-color: rgb(133, 133, 133);
+        }
+        .girisyap:hover ul a:hover{
+            background-color: rgba(196, 199, 3, 0.856);
+        }
+        .kayitol:hover ul a:hover{
+            background-color: rgba(196, 199, 3, 0.856);
+        }
+        .girisyap ul {
+            display: none;
+        }
+        .kayitol ul{
+            display: none;
+        }
+        .girisyap a:hover + .ul1,.ul1:hover {
+            display: block;
+        }
+        .kayitol a:hover + .ul2,.ul2:hover{
+            display: block;
+        }
+        @media screen and (max-width: 1360px) {  
+            .heading-main{
+                font-size: 4rem;
+            }
+            .heading-sub{
+                font-size: 6rem;
+            }
+            .logo{
+                height: 26rem;
+            }
+            .menu-list li .a1{
+                display: block;
+                width: 28.5rem;
+                background: rgb(44, 47, 51);
+                color: white;
+                text-decoration: none;
+                height: 7rem;
+                line-height: 7rem; 
+                text-align: center;
+                font-size: 4rem;
+            }
+            .girisyap li a{
+                background-color:  rgb(78, 78, 78);
+                display: block;
+                width: 20rem;
+                color: white;
+                text-decoration: none;
+                height: 6rem;
+                line-height: 6rem; 
+                text-align: center;
+                font-size: 3rem;
+            }
+            .kayitol li a{
+                background-color:  rgb(78, 78, 78);
+                display: block;
+                width: 20rem;
+                color: white;
+                text-decoration: none;
+                height: 6rem;
+                line-height: 6rem; 
+                text-align: center;
+                font-size: 3rem;
+            }          
+        }
+        @media screen and (max-width: 1180px) {  
+            .heading-main{
+                font-size: 3rem;
+            }
+            .heading-sub{
+                font-size: 5rem;
+            }
+            .logo{
+                height: 20rem;
+            }
+            .menu-list li .a1{
+                display: block;
+                width: 24rem;
+                background: rgb(44, 47, 51);
+                color: white;
+                text-decoration: none;
+                height: 5rem;
+                line-height: 5rem; 
+                text-align: center;
+                font-size: 3.5rem;
+            }
+            .girisyap li a{
+                background-color:  rgb(78, 78, 78);
+                display: block;
+                width: 15rem;
+                color: white;
+                text-decoration: none;
+                height: 5rem;
+                line-height: 5rem; 
+                text-align: center;
+                font-size: 3rem;
+            }
+            .kayitol li a{
+                background-color:  rgb(78, 78, 78);
+                display: block;
+                width: 15rem;
+                color: white;
+                text-decoration: none;
+                height: 5rem;
+                line-height: 5rem; 
+                text-align: center;
+                font-size: 3rem;
+            }           
+        }
+        @media screen and (max-width: 770px) {  
+            .heading-main{
+                font-size: 2rem;
+            }
+            .heading-sub{
+                font-size: 3rem;
+            }
+            .logo-box{
+                left: 1rem;
+            }
+            .logo{
+                height: 15rem;
+            }
+            .menu-list li .a1{
+                display: block;
+                width: 18rem;
+                background: rgb(44, 47, 51);
+                color: white;
+                text-decoration: none;
+                height: 5rem;
+                line-height: 5rem; 
+                text-align: center;
+                font-size: 3rem;
+            }
+            .girisyap li a{
+                background-color:  rgb(78, 78, 78);
+                display: block;
+                width: 13rem;
+                color: white;
+                text-decoration: none;
+                height: 4rem;
+                line-height: 4rem; 
+                text-align: center;
+                font-size: 2rem;
+            }
+            .kayitol li a{
+                background-color:  rgb(78, 78, 78);
+                display: block;
+                width: 13rem;
+                color: white;
+                text-decoration: none;
+                height: 4rem;
+                line-height: 4rem; 
+                text-align: center;
+                font-size: 2rem;
+            }           
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-box">
+            <img class="logo" src="otoparking1/otoparking2/otoparking3/img/Logo111.png" alt="">
+        </div>
+        <h1 class="heading">
+            <div class="heading-main">Otopark Kayıt/Takip Sistemi</div>
+            <div class="heading-sub">OTOPARKING</div>
+                <ul class="menu-list">
+                    <li class="girisyap">
+                        <a class="a1" href="#">Giriş Yap</a>
+                        <ul class="ul1">
+                            <li>
+                                <a class="a3" href="otoparking1/girisyapisletme.jsp">Işletme Girişi</a>
+                            </li>
+                            <li>
+                                <a class="a4" href="otoparking1/girisyapuye.jsp">Üye Girişi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="kayitol">
+                        <a class="a1" href="#">Kayıt Ol</a>
+                        <ul class="ul2">
+                            <li>
+                                <a class="a5" href="otoparking1/kayitolisletme.jsp">İşletme kaydı</a>
+                            </li>
+                            <li>
+                                <a class="a6" href="otoparking1/kayitoluye.jsp">Üye Kaydı</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </h1>
+    </header>
+</body>
+</html>
